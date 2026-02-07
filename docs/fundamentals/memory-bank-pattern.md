@@ -66,7 +66,7 @@ memory-bank/
 project/
 ├── .cursor/rules/          # Cursor constraints (< 100 lines each)
 ├── .windsurf/rules/        # Windsurf constraints (< 100 lines each)
-├── CLAUDE.md               # Claude Code constraints + quick ref (< 300 lines)
+├── CLAUDE.md               # Claude Code constraints + quick ref (< 150 lines)
 └── memory-bank/
     ├── INDEX.md            # ⭐ Central navigation hub (< 100 lines)
     ├── architecture/       # System design docs

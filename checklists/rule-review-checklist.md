@@ -9,7 +9,7 @@ Use this checklist when reviewing your context engineering rules for quality and
 - [ ] **Each rule file is appropriately sized**
   - [ ] Cursor rules: < 100 lines each
   - [ ] Windsurf rules: < 75 lines each
-  - [ ] Claude CLAUDE.md: < 300 lines
+  - [ ] Claude CLAUDE.md: < 150 lines
   - [ ] If too large, split or move to memory-bank
 
 - [ ] **Rules are split by concern, not arbitrarily**

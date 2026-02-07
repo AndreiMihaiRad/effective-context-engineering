@@ -55,7 +55,7 @@ Open your repository in any IDE with GitHub Copilot installed. The instructions 
 | **Multiple files** | No (single file) | Yes (multiple rules) | Yes (multiple rules) | Yes (hierarchy) |
 | **Conditional loading** | No | Yes (globs) | Yes (globs) | Yes (directory-based) |
 | **Size limit** | No hard limit | No hard limit | No hard limit | No hard limit |
-| **Recommended size** | < 200 lines | < 100 lines per file | < 75 lines per file | < 300 lines |
+| **Recommended size** | < 200 lines | < 100 lines per file | < 75 lines per file | < 150 lines |
 
 ## Best Practices
 

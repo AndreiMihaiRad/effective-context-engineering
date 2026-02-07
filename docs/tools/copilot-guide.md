@@ -292,7 +292,7 @@ See `memory-bank/workflows/troubleshooting.md`
 | **Format** | Plain Markdown | Plain Markdown |
 | **Hierarchy** | No | Yes (global → project → directory) |
 | **Conditional loading** | No | Yes (directory-based) |
-| **Recommended size** | < 200 lines | < 300 lines |
+| **Recommended size** | < 200 lines | < 150 lines |
 | **Scope** | Repository | Global + project + directory |
 
 **Key difference**: Claude Code supports hierarchical context (global preferences → project → component), while GitHub Copilot is repository-only.
