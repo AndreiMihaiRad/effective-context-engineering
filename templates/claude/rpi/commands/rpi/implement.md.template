@@ -1,0 +1,46 @@
+# RPI: Implement Phase
+
+Implement changes following the approved plan.
+
+## Plan File
+
+Read the plan for: $ARGUMENTS
+
+## Instructions
+
+1. **Read the plan file** created in the planning phase
+2. **Implement changes** exactly as specified in the plan
+3. **Mark progress** — update the plan with [DONE] markers
+4. **Write tests** as specified in the plan
+5. **Run verification** checklist when complete
+
+## Process
+
+For each item in the plan:
+1. Read the plan entry
+2. Make the change
+3. Mark as [DONE] in the plan file
+4. If context approaches 50%, compact progress and continue
+
+## Constraints
+
+- Follow the plan exactly — deviations require noting WHY
+- Monitor context with /cost — compact at 50%
+- Write tests as you go, not at the end
+- If you discover something the plan missed, note it but don't deviate
+- Run tests after each significant change
+
+## On Completion
+
+Update the plan file with final status:
+```markdown
+## Status: COMPLETE
+
+### Deviations from Plan
+- [Any changes from the original plan and why]
+
+### Verification
+- [x] All planned changes implemented
+- [x] All tests passing
+- [x] No breaking changes introduced
+```

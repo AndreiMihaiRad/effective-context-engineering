@@ -1,0 +1,63 @@
+# RPI: Plan Phase
+
+Create a detailed implementation plan based on research.
+
+## Research File
+
+Read the research file for: $ARGUMENTS
+
+## Instructions
+
+1. **Read the research file** created in the research phase
+2. **Design the solution** — specify every file and change
+3. **Consider edge cases** — what could go wrong?
+4. **Define tests** — what tests prove correctness?
+5. **Create verification checklist** — how to know it's done?
+
+## Output
+
+Create a file `plan-[topic].md` with:
+
+```markdown
+# Plan: [Topic]
+
+## Summary
+[1-2 sentences describing the approach]
+
+## Files to Create
+### 1. `path/to/new-file.ts`
+**Purpose**: [why this file exists]
+```[language]
+[Key code showing the approach — not full implementation]
+```
+
+## Files to Modify
+### 1. `path/to/existing.ts`
+**Changes**: [what changes and why]
+**Line [N]**: [specific change]
+
+## Test Cases
+### Unit Tests
+1. [Test description]
+2. [Test description]
+
+### Integration Tests
+1. [Test description]
+
+## Edge Cases
+- [Edge case and how it's handled]
+
+## Verification Checklist
+- [ ] [Verification step]
+- [ ] [Verification step]
+- [ ] Tests pass
+- [ ] No breaking changes
+```
+
+## Constraints
+
+- Do NOT implement — plan only
+- Every change must reference specific files and lines
+- Include code snippets showing the approach (not full implementation)
+- Use extended thinking for complex architectural decisions
+- Flag anything requiring human decision

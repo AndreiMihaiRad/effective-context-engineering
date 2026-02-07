@@ -1,0 +1,25 @@
+---
+path: "[src/path/**]"
+---
+
+# [Rule Name]
+
+## Constraints
+
+- [ALWAYS/NEVER] [specific constraint with rationale]
+- [ALWAYS/NEVER] [specific constraint with rationale]
+- [ALWAYS/NEVER] [specific constraint with rationale]
+
+## Patterns
+
+- Use [pattern] for [use case]
+- Prefer [approach A] over [approach B] because [reason]
+
+## Anti-Patterns
+
+- NEVER [anti-pattern] — Why: [consequence]. Instead: [alternative]
+- NEVER [anti-pattern] — Why: [consequence]. Instead: [alternative]
+
+## Memory-Bank
+
+For detailed documentation, see `memory-bank/[relevant-doc].md`.

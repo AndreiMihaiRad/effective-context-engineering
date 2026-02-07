@@ -1,0 +1,41 @@
+# [PROJECT_NAME] Workspace Rules
+
+## Overview
+
+[Brief description of workspace/monorepo - 2-3 sentences max]
+
+| Package | Purpose | Language/Version |
+|---------|---------|------------------|
+| `[package-1]/` | [Purpose] | [Language + version] |
+| `[package-2]/` | [Purpose] | [Language + version] |
+
+## Memory-Bank Navigation
+
+Start with `memory-bank/INDEX.md` for workspace-wide documentation.
+
+## Code Standards
+
+- **Formatting**: [tool - e.g., Prettier, Black, ruff]
+- **Type annotations**: [Required/Optional]
+- **Testing**: [framework - e.g., Jest, pytest]
+- **Package management**: [tool - e.g., npm, poetry, hatch]
+
+**Naming conventions**:
+- Variables/functions: `[case - e.g., snake_case, camelCase]`
+- Classes: `[case - e.g., PascalCase]`
+- Constants: `[case - e.g., UPPER_CASE]`
+
+---
+
+## Quick Reference
+
+[Optional: 3-5 most common commands or patterns]
+
+```bash
+# Example commands
+[command]  # [Description]
+```
+
+---
+
+**Note**: Keep this file under 75 lines (Windsurf loads all rules for every session). For detailed documentation, use `memory-bank/`.

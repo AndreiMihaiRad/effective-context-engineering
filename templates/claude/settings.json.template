@@ -1,0 +1,56 @@
+{
+  // Team-shared settings — commit this file to your repository
+  // See docs/tools/claude-code-settings-reference.md for full reference
+
+  "permissions": {
+    "allow": [
+      // Safe read-only operations
+      "Read(*)",
+      "Glob(*)",
+      "Grep(*)",
+
+      // Common development commands
+      "Bash(npm test:*)",
+      "Bash(npm run lint:*)",
+      "Bash(pytest:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "deny": [
+      // Dangerous operations that should never run automatically
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(drop table:*)",
+      "Bash(curl:*)"
+    ]
+  },
+
+  "hooks": {
+    // Uncomment and customize as needed
+
+    // "PreToolUse": [
+    //   {
+    //     "matcher": "Bash",
+    //     "command": "python .claude/hooks/validate-command.py"
+    //   }
+    // ],
+
+    // "PostToolUse": [
+    //   {
+    //     "matcher": "Write|Edit",
+    //     "command": "npx eslint --fix $CLAUDE_FILE_PATH"
+    //   }
+    // ]
+  },
+
+  "mcpServers": {
+    // Uncomment to add MCP servers
+    // "context7": {
+    //   "command": "npx",
+    //   "args": ["-y", "@context7/mcp-server"],
+    //   "env": {}
+    // }
+  }
+}

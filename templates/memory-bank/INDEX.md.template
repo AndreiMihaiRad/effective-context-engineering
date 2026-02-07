@@ -1,0 +1,122 @@
+# Memory-Bank Index
+
+**Purpose**: Central navigation for context retrieval
+
+**Usage Strategy**:
+- Start here to locate documentation
+- Use Read/Grep/Glob tools to fetch specific docs as needed
+- Don't pre-load everything - retrieve based on current task
+- Check file sizes below to budget context appropriately
+
+---
+
+## Navigation by Task
+
+| Task | Start With | Size |
+|------|------------|------|
+| **[Task 1]** | `[path/to/doc.md]` | [N lines] |
+| **[Task 2]** | `[path/to/doc.md]` | [N lines] |
+| **[Task 3]** | `[path/to/doc.md]` | [N lines] |
+| **[Task 4]** | `[path/to/doc.md]` | [N lines] |
+
+---
+
+## File Size Reference
+
+### Lightweight (< 150 lines) - Quick reads
+**Token cost**: ~500 tokens each  
+**When to use**: Quick lookups, syntax references
+
+| File | Lines | Topic |
+|------|-------|-------|
+| `[category]/[file].md` | [N] | [Topic description] |
+| `[category]/[file].md` | [N] | [Topic description] |
+
+### Medium (150-350 lines) - Focused deep-dives
+**Token cost**: ~1,000-1,500 tokens each  
+**When to use**: Understanding components, workflows
+
+| File | Lines | Topic |
+|------|-------|-------|
+| `[category]/[file].md` | [N] | [Topic description] |
+| `[category]/[file].md` | [N] | [Topic description] |
+
+### Large (350-500 lines) - Comprehensive references
+**Token cost**: ~1,500-2,000 tokens each  
+**When to use**: Complex workflows, troubleshooting
+
+| File | Lines | Topic |
+|------|-------|-------|
+| `[category]/[file].md` | [N] | [Topic description] |
+
+### Very Large (> 500 lines) - Detailed specifications
+**Token cost**: 2,000+ tokens each  
+**When to use**: Implementation details, complete specs  
+**Caution**: Only read when necessary
+
+| File | Lines | Topic |
+|------|-------|-------|
+| `[category]/[file].md` | [N] | [Topic description] |
+
+---
+
+## Directory Structure
+
+```
+memory-bank/
+├── architecture/          → [Description - e.g., "System design docs"]
+│   ├── overview.md        → [What it covers]
+│   └── [other-doc].md
+│
+├── components/            → [Description - e.g., "Component specs"]
+│   ├── [component-a].md
+│   └── [component-b].md
+│
+├── workflows/             → [Description - e.g., "How-to guides"]
+│   ├── [workflow-1].md
+│   └── [workflow-2].md
+│
+└── tech-stack/            → [Description - e.g., "Technology guides"]
+    ├── [technology-a].md
+    └── [technology-b].md
+```
+
+**Total**: [N] files, ~[N] lines
+
+---
+
+## Quick Start Paths
+
+### "I need to [common task 1]"
+1. `[path/to/step1.md]` - [Description] ([N lines])
+2. `[path/to/step2.md]` - [Description] ([N lines])
+3. `[path/to/step3.md]` - [Description] ([N lines])
+
+### "I need to [common task 2]"
+1. `[path/to/step1.md]` - [Description] ([N lines])
+2. `[path/to/step2.md]` - [Description] ([N lines])
+
+### "I need to [common task 3]"
+1. `[path/to/overview.md]` - [Description] ([N lines])
+2. Specific component docs as needed
+
+---
+
+## Cross-References
+
+| If you're reading... | Also consider... |
+|---------------------|------------------|
+| `[doc-a].md` | `[related-doc-b].md`, `[related-doc-c].md` |
+| `[doc-x].md` | `[related-doc-y].md` |
+
+---
+
+## See Also
+
+- **[Tool] Rules** - [Where they're located, what they cover]
+- **Project README** - High-level overview
+- **[Other relevant docs]**
+
+---
+
+**Last Updated**: [YYYY-MM-DD]

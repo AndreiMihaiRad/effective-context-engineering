@@ -1,0 +1,65 @@
+---
+description: Simple FastAPI project rules
+alwaysApply: true
+---
+
+# FastAPI Project Rules
+
+## Project Context
+
+REST API for user management built with FastAPI and PostgreSQL.
+
+**Architecture**: Hexagonal (domain, adapters, ports)
+**Tech Stack**: Python 3.12, FastAPI, SQLAlchemy, pytest
+
+## Key Patterns
+
+### 1. Dependency Injection
+```python
+# Good: Use FastAPI dependencies
+@app.get("/users")
+async def get_users(db: Session = Depends(get_db)):
+    return db.query(User).all()
+```
+
+### 2. Pydantic Models for Validation
+```python
+# All request/response use Pydantic
+class UserCreate(BaseModel):
+    email: EmailStr
+    name: str
+```
+
+### 3. Repository Pattern
+```python
+# Data access through repositories
+class UserRepository:
+    def get(self, id: int) -> User
+    def create(self, user: UserCreate) -> User
+```
+
+## Memory-Bank Navigation
+
+**Start with** `memory-bank/INDEX.md` for all documentation.
+
+### Common Tasks
+- Adding endpoint: `memory-bank/api-patterns.md`
+- Writing tests: `memory-bank/testing.md`
+- Architecture: `memory-bank/architecture.md`
+
+## Development Commands
+
+```bash
+poetry install           # Setup
+poetry run pytest        # Tests
+poetry run pytest -v     # Verbose tests
+poetry run uvicorn main:app --reload  # Dev server
+```
+
+## Anti-Patterns
+
+- **NEVER** put business logic in route handlers → Use domain layer
+- **NEVER** use raw SQL strings → Use SQLAlchemy ORM
+- **NEVER** commit database sessions manually → Use dependency injection
+- **ALWAYS** use Pydantic for request/response validation
+- **ALWAYS** use async endpoints for I/O operations

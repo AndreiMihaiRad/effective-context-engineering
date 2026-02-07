@@ -1,0 +1,46 @@
+# RPI: Research Phase
+
+Research the following topic thoroughly before any implementation begins.
+
+## Topic
+
+$ARGUMENTS
+
+## Instructions
+
+1. **Explore the codebase** systematically — find all files related to the topic
+2. **Document findings** with exact file paths and line numbers
+3. **Identify patterns** — what architectural patterns are used?
+4. **Map dependencies** — what depends on what?
+5. **Note constraints** — what must not change?
+
+## Output
+
+Create a file `research-[topic].md` with:
+
+```markdown
+# Research: [Topic]
+
+## Key Files
+- `path/to/file.ts` (lines X-Y) — [what it does]
+- `path/to/file.ts` (lines X-Y) — [what it does]
+
+## Architecture Pattern
+[Describe the pattern used]
+
+## Dependencies
+[What depends on what]
+
+## Constraints
+[Things that must not change]
+
+## Open Questions
+[Anything unclear that needs human input]
+```
+
+## Constraints
+
+- Do NOT implement anything — research only
+- Be thorough — missing a file now costs 10x later
+- Include line numbers for all references
+- Flag anything ambiguous for human review

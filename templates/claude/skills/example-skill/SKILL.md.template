@@ -1,0 +1,40 @@
+---
+name: "[skill-name]"
+description: "[Brief description of what this skill does — Claude uses this to decide when to invoke it]"
+# model: opus          # Optional: override model for this skill
+# allowed-tools:       # Optional: restrict which tools the skill can use
+#   - Read
+#   - Grep
+#   - Glob
+#   - Edit
+#   - Write
+---
+
+# [Skill Name]
+
+## Purpose
+
+[1-2 sentences explaining what this skill accomplishes and when Claude should use it]
+
+## Instructions
+
+When this skill is activated:
+
+1. [Step 1 — what to do first]
+2. [Step 2 — what to do next]
+3. [Step 3 — how to complete the task]
+
+## Constraints
+
+- [Constraint 1 — things the skill must always do]
+- [Constraint 2 — things the skill must never do]
+
+## Output Format
+
+[Describe the expected output format]
+
+## Example
+
+**Input**: [Example trigger or request]
+
+**Output**: [Example of what the skill produces]

@@ -1,0 +1,24 @@
+{
+  // Personal settings — add to .gitignore
+  // Overrides team settings in .claude/settings.json
+  // See docs/tools/claude-code-settings-reference.md for full reference
+
+  "permissions": {
+    "allow": [
+      // Add personal tool permissions here
+      // These extend (don't replace) team permissions
+    ]
+  },
+
+  "model": {
+    // Override default model for personal preference
+    // "default": "opus",
+    // "effort": "high"
+  },
+
+  "display": {
+    // Personal display preferences
+    // "statusLine": true,
+    // "spinnerVerbs": ["Thinking", "Analyzing", "Working"]
+  }
+}

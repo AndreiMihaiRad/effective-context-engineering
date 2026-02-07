@@ -1,0 +1,109 @@
+# GitHub Copilot Custom Instructions
+
+> This file provides guidance to GitHub Copilot when working with this repository.
+
+## Project Overview
+
+[Brief description of workspace - 2-3 sentences]
+
+| Component | Purpose | Language/Version |
+|-----------|---------|------------------|
+| `[component-1]/` | [Purpose] | [Language + version] |
+| `[component-2]/` | [Purpose] | [Language + version] |
+
+## Memory-Bank Navigation
+
+**Start with** `memory-bank/INDEX.md` for detailed documentation organized by task.
+
+All detailed documentation lives in `memory-bank/` - reference it instead of duplicating content here.
+
+## Development Workflow
+
+### Common Commands
+
+**[Component 1]**:
+```bash
+cd [component-dir]
+[command]  # [Description]
+[command]  # [Description]
+```
+
+**[Component 2]**:
+```bash
+cd [component-dir]
+[command]  # [Description]
+[command]  # [Description]
+```
+
+## Architecture
+
+### [Component 1]: [Architecture Style]
+[Brief description - 2-3 sentences]
+
+**Key patterns**:
+- **[Pattern 1]**: [Brief description]
+- **[Pattern 2]**: [Brief description]
+
+### [Component 2]: [Architecture Style]
+[Brief description - 2-3 sentences]
+
+**Key patterns**:
+- **[Pattern 1]**: [Brief description]
+- **[Pattern 2]**: [Brief description]
+
+## Code Standards
+
+**Language conventions**:
+- **Formatting**: [tool - e.g., Prettier, Black, ruff]
+- **Type annotations**: [Required/Optional - e.g., TypeScript strict mode, Python type hints required]
+- **Testing**: [framework - e.g., Jest, pytest, JUnit]
+- **Package management**: [tool - e.g., npm, poetry, gradle]
+
+**Naming conventions**:
+- Variables/functions: `[case - e.g., camelCase, snake_case]`
+- Classes: `[case - e.g., PascalCase]`
+- Constants: `[case - e.g., UPPER_CASE, SCREAMING_SNAKE_CASE]`
+- Files: `[case - e.g., kebab-case, snake_case]`
+
+## Critical Constraints
+
+### Security (DO NOT)
+- ❌ [Anti-pattern #1 - e.g., String concatenation in SQL queries]
+- ❌ [Anti-pattern #2 - e.g., Hardcoded credentials]
+- ❌ [Anti-pattern #3 - e.g., Exposing sensitive data in logs]
+- ✅ [Correct approach #1 - e.g., Use parameterized queries]
+- ✅ [Correct approach #2 - e.g., Use environment variables/secrets management]
+
+### Performance (DO NOT)
+- ❌ [Anti-pattern #1 - e.g., N+1 database queries]
+- ❌ [Anti-pattern #2 - e.g., Full table scans without indexes]
+- ❌ [Anti-pattern #3 - e.g., Synchronous I/O in async contexts]
+- ✅ [Correct approach #1 - e.g., Use eager loading/joins]
+- ✅ [Correct approach #2 - e.g., Add indexes on filter columns]
+
+### Breaking Changes (DO NOT)
+- ❌ [Anti-pattern #1 - e.g., Renaming API parameters]
+- ❌ [Anti-pattern #2 - e.g., Changing response schemas]
+- ❌ [Anti-pattern #3 - e.g., Removing optional parameters]
+- ✅ [Correct approach #1 - e.g., Add new endpoints for new behavior]
+- ✅ [Correct approach #2 - e.g., Version APIs if breaking changes needed]
+
+## Quick Reference
+
+### [Common Task 1 - e.g., Adding New Endpoint]
+See `memory-bank/workflows/[task].md` for complete guide.
+
+Quick steps:
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+### [Common Task 2 - e.g., Testing Changes]
+See `memory-bank/workflows/[task].md` for complete guide.
+
+### [Common Task 3 - e.g., Debugging Issues]
+See `memory-bank/workflows/troubleshooting.md` for detailed debugging steps.
+
+---
+
+**Note**: Keep this file under 200 lines. For comprehensive documentation, use `memory-bank/` and reference it here with clear pointers.

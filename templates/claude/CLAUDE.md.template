@@ -1,0 +1,77 @@
+# CLAUDE.md
+
+<!-- WHY: Place critical instructions at the BEGINNING — Claude pays most attention here -->
+
+## Critical Constraints
+
+### [Category 1 - e.g., Security]
+- NEVER [anti-pattern #1] — Why: [consequence]
+- NEVER [anti-pattern #2] — Why: [consequence]
+- ALWAYS [correct approach #1]
+- ALWAYS [correct approach #2]
+
+### [Category 2 - e.g., Performance]
+- NEVER [anti-pattern #1] — Why: [consequence]
+- ALWAYS [correct approach #1]
+
+---
+
+<!-- WHAT: Project context, stack, and structure -->
+
+## Workspace Overview
+
+[Brief description of workspace - 2-3 sentences]
+
+| Package | Purpose | Language/Version |
+|---------|---------|------------------|
+| `[package-1]/` | [Purpose] | [Language + version] |
+| `[package-2]/` | [Purpose] | [Language + version] |
+
+## Architecture
+
+### [Project 1]: [Architecture Style]
+[Brief description - 2-3 sentences]
+
+**Key patterns**:
+- **[Pattern 1]**: [Brief description]
+- **[Pattern 2]**: [Brief description]
+
+---
+
+<!-- HOW: Commands, workflows, and operational guidance -->
+
+## Development Commands
+
+```bash
+[command]  # [Description]
+[command]  # [Description]
+[command]  # [Description]
+```
+
+## Code Standards
+
+- **Formatting**: [tool]
+- **Type annotations**: [Required/Optional]
+- **Docstrings**: [style]
+- **Naming**: variables `[case]`, classes `[case]`, constants `[case]`
+
+## Memory-Bank Navigation
+
+Start with `memory-bank/INDEX.md` for detailed documentation.
+
+- `memory-bank/[project-1]/INDEX.md` - [What it covers]
+- `memory-bank/[project-2]/INDEX.md` - [What it covers]
+
+## Quick Reference
+
+### [Common Task 1]
+[Step-by-step or reference to memory-bank]
+
+### [Common Task 2]
+See `memory-bank/workflows/[task].md` for details.
+
+---
+
+<!-- Place critical reminders at the END too — Claude also pays attention here -->
+
+**Keep this file under 150 lines.** Claude Code's system prompt consumes ~50 instructions, leaving ~100-150 for yours. Adherence drops significantly above 150 lines. Move detailed documentation to `memory-bank/`.

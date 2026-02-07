@@ -1,0 +1,54 @@
+---
+description: [PROJECT_NAME] rules - applies when editing [PROJECT] files
+globs: ["[project-dir]/**/*"]
+---
+
+# [PROJECT_NAME] Rules
+
+## Project Context
+
+[Brief 1-2 sentence description of what this project does]
+
+**Architecture**: [e.g., "Hexagonal architecture", "MVC", "Three-layer design"]
+
+## Key Patterns
+
+### Pattern 1: [Pattern Name]
+[Brief description or code example]
+
+```[language]
+# Example
+[code snippet if helpful]
+```
+
+### Pattern 2: [Pattern Name]
+[Brief description]
+
+## Memory-Bank First
+
+**ALWAYS consult** `memory-bank/[project]/INDEX.md` before implementation.
+
+### Key Documentation
+- `memory-bank/[project]/architecture.md` - [What it covers]
+- `memory-bank/[project]/components.md` - [What it covers]
+- `memory-bank/[project]/workflows.md` - [What it covers]
+
+## Development Commands
+
+```bash
+cd [project-dir]
+[command]  # [Description - e.g., Run tests]
+[command]  # [Description - e.g., Format code]
+[command]  # [Description - e.g., Lint]
+```
+
+## Anti-Patterns
+
+- **NEVER** [specific anti-pattern #1]
+- **NEVER** [specific anti-pattern #2]
+- **ALWAYS** [specific requirement #1]
+- **ALWAYS** [specific requirement #2]
+
+---
+
+**Note**: Keep this file under 100 lines. For detailed documentation, use `memory-bank/[project]/`.
